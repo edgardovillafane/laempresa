@@ -9,6 +9,7 @@ import { RevestimientosComponent } from './revestimientos/revestimientos.compone
 import { ContactoComponent } from './contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CarouselBasicComponent } from './carousel-basic/carousel-basic.component';
 const routes: Routes = [
   {
       path: 'home',
@@ -37,7 +38,8 @@ const routes: Routes = [
     CielorrasosComponent,
     RevestimientosComponent,
     ContactoComponent,
-    HomeComponent
+    HomeComponent,
+    CarouselBasicComponent
   ],
   imports: [
     BrowserModule,

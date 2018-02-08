@@ -1,23 +1,39 @@
 #logogrande {
   max-width: 200px;
   position: absolute;
+  z-index: 1000;
+  transition: 300ms all ease-in-out;
 }
+
+@media screen and (max-width:992px) {
+  #logogrande {
+    max-width: 80px;
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    left: 15px;
+  }
+}
+
 footer {
-	position: fixed;
-    background:rgba(128, 0, 5, 1);
-	width: 100%;
-	bottom: 0;
-	z-index: 1000;
+  position: fixed;
+  background: rgba(128, 0, 5, 1);
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
 }
+
 footer h3 {
-	margin: 7px;
-	text-align: right;
-	margin-right: 30px;
-	color: #FFF;
+  margin: 7px;
+  text-align: right;
+  margin-right: 30px;
+  color: #FFF;
 }
+
 footer strong {
-	color: white;
+  color: white;
 }
+
 footer span {
-	font-size: 16px;
+  font-size: 16px;
 }
