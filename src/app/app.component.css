@@ -1,0 +1,23 @@
+#logogrande {
+  max-width: 200px;
+  position: absolute;
+}
+footer {
+	position: fixed;
+    background:rgba(128, 0, 5, 1);
+	width: 100%;
+	bottom: 0;
+	z-index: 1000;
+}
+footer h3 {
+	margin: 7px;
+	text-align: right;
+	margin-right: 30px;
+	color: #FFF;
+}
+footer strong {
+	color: white;
+}
+footer span {
+	font-size: 16px;
+}
