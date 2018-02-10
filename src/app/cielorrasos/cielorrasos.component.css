@@ -1,0 +1,18 @@
+.contenedor {
+    width: 100%;
+    background-color: rgba(31, 4, 4, 0.83);
+    height: calc(100% - 65px);
+    min-height: calc(100% - 65px);
+    position: absolute;
+  }
+  
+  .nomplaca {
+    font-family: 'Bitter', serif;
+    font-size: 90px;
+    color: #FFF;
+    margin-top: 0px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.77);
+    font-weight: bold;
+    line-height: 121px;
+  }
+  

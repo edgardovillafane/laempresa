@@ -1,7 +1,7 @@
 #contcontacto {
 
-    height: calc(100% - 60px);
-    min-height: calc(100% - 60px);
+    height: calc(100% - 65px);
+    min-height: calc(100% - 65px);
     position: absolute;
     min-width: 100%!important;
     background: linear-gradient(135deg, rgba(89, 0, 81, 0.8) 0%, rgba(2, 4, 123, 0.89) 100%);

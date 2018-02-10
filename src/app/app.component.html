@@ -1,6 +1,6 @@
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text">
       <a class="navbar-brand" href="#"><img id="logogrande" src="assets/images/logo.jpg" ></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,37 +13,10 @@
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="/home" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Revestimientos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" routerLink="/home">Arenisca</a>
-              <a class="dropdown-item" routerLink="/home">Mármol</a>
-              <a class="dropdown-item" routerLink="/home">Patagonia</a>
-              <a class="dropdown-item" routerLink="/home">Piedra Artificial</a>
-              <a class="dropdown-item" routerLink="/home">Piel Naranja</a>
-              <a class="dropdown-item" routerLink="/home">Patagonia</a>
-              <a class="dropdown-item" routerLink="/home">Gran Sol</a>
-              <a class="dropdown-item" routerLink="/home">Pizarra fina</a>
-              <a class="dropdown-item" routerLink="/home">Pizara Gruesa</a>
-              <a class="dropdown-item" routerLink="/home">San Juan</a>
-              <a class="dropdown-item" routerLink="/home">Travertino</a>
-              <a class="dropdown-item" routerLink="/home">Travertino con marco</a>
-              <a class="dropdown-item" routerLink="/home">Lisa</a>
-            </div>
+            <app-droprevestimientos></app-droprevestimientos>
           </li>
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Cielorrasos
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" routerLink="/home">Meteor</a>
-              <a class="dropdown-item" routerLink="/home">Alicante</a>
-              <a class="dropdown-item" routerLink="/home">Piel Naranja</a>
-              <a class="dropdown-item" routerLink="/home">Ubeda</a>
-              <a class="dropdown-item" routerLink="/home">Gran Sol</a>
-              <a class="dropdown-item" routerLink="/home">Lisa</a>
-              </div>
+              <app-dropcielorrasos></app-dropcielorrasos>
             </li>
             <li class="nav-item">
             <a class="nav-link" routerLink="/contacto">Contacto</a>

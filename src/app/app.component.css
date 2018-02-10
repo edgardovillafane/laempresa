@@ -37,3 +37,10 @@ footer strong {
 footer span {
   font-size: 16px;
 }
+
+nav{
+  font-size: 22px;
+}
+nav ul li {
+  margin-left: 25px;
+}

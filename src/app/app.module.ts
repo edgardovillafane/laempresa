@@ -10,6 +10,9 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CarouselBasicComponent } from './carousel-basic/carousel-basic.component';
+import { DroprevestimientosComponent } from './droprevestimientos/droprevestimientos.component';
+import { DropcielorrasosComponent } from './dropcielorrasos/dropcielorrasos.component';
+import { FiltradoPipe } from './filtrado.pipe';
 const routes: Routes = [
   {
       path: 'home',
@@ -19,11 +22,11 @@ const routes: Routes = [
     path: '',   redirectTo: '/home', pathMatch: 'full'
   },
   {
-    path: 'revestimientos',
+    path: 'revestimientos/:nombre',
     component: RevestimientosComponent,
 },
 {
-  path: 'cielorrasos',
+  path: 'cielorrasos/:nombre',
   component: CielorrasosComponent,
 },
 {
@@ -39,7 +42,10 @@ const routes: Routes = [
     RevestimientosComponent,
     ContactoComponent,
     HomeComponent,
-    CarouselBasicComponent
+    CarouselBasicComponent,
+    DroprevestimientosComponent,
+    DropcielorrasosComponent,
+    FiltradoPipe
   ],
   imports: [
     BrowserModule,
