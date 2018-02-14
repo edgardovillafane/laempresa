@@ -1,46 +1,86 @@
 #logogrande {
-  max-width: 200px;
-  position: absolute;
-  z-index: 1000;
-  transition: 300ms all ease-in-out;
+    max-width: 200px;
+    position: absolute;
+    z-index: 1000;
+    transition: 300ms all ease-in-out;
+}
+
+.droplista {
+    margin-left: 0!important;
 }
 
 @media screen and (max-width:992px) {
-  #logogrande {
-    max-width: 80px;
-    position: absolute;
-    z-index: 1000;
-    top: 15px;
-    left: 15px;
-  }
+    #logogrande {
+        max-width: 80px;
+        position: absolute;
+        z-index: 1000;
+        top: 15px;
+        left: 15px;
+    }
+    footer {
+        text-align: center;
+        font-size: 20px;
+    }
+    footer h3 {
+        font-size: 1rem;
+    }
+    .break-phone {
+        display: block;
+    }
+}
+
+@media screen and (min-width:993px) {
+    .break-phone {
+        display: none;
+    }
 }
 
 footer {
-  position: fixed;
-  background: rgba(128, 0, 5, 1);
-  width: 100%;
-  bottom: 0;
-  z-index: 1000;
+    position: fixed;
+    background: rgba(128, 0, 5, 0.5);
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    font-family: bitter;
+    text-shadow: 0.03em 0.03em 0.03em black;
 }
 
 footer h3 {
-  margin: 7px;
-  text-align: right;
-  margin-right: 30px;
-  color: #FFF;
+    margin: 7px;
+    text-align: right;
+    margin-right: 30px;
+    color: #FFF;
 }
 
 footer strong {
-  color: white;
+    color: white;
 }
 
 footer span {
-  font-size: 16px;
+    font-size: 16px;
 }
 
-nav{
-  font-size: 22px;
+nav {
+    font-size: 22px;
 }
+
 nav ul li {
-  margin-left: 25px;
+    margin-left: 25px;
+}
+
+:focus {
+    outline: none;
+}
+
+.menumobile {
+    margin-left: -80px;
+}
+
+.menumobile ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menumobile ul li ul li {
+    font-size: 10px;
 }

@@ -1,8 +1,17 @@
 #contcontacto {
-
     height: calc(100% - 65px);
-    min-height: calc(100% - 65px);
+    min-height: calc(100% - 40px);
     position: absolute;
     min-width: 100%!important;
     background: linear-gradient(135deg, rgba(89, 0, 81, 0.8) 0%, rgba(2, 4, 123, 0.89) 100%);
+}
+
+#fondocontacto {
+    background-image: url(/assets/images/constructor2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100% - 65px);
+    min-height: calc(100% - 65px);
+    min-width: 100%!important;
+    position: absolute;
 }
