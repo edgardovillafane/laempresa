@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -10,29 +10,27 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CarouselBasicComponent } from './carousel-basic/carousel-basic.component';
-import { DroprevestimientosComponent } from './droprevestimientos/droprevestimientos.component';
-import { DropcielorrasosComponent } from './dropcielorrasos/dropcielorrasos.component';
-import { FiltradoPipe } from './filtrado.pipe';
+
 const routes: Routes = [
   {
-      path: 'home',
-      component: HomeComponent,
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path: '',   redirectTo: '/home', pathMatch: 'full'
+    path: '', redirectTo: '/home', pathMatch: 'full'
   },
   {
     path: 'revestimientos/:nombre',
     component: RevestimientosComponent,
-},
-{
-  path: 'cielorrasos/:nombre',
-  component: CielorrasosComponent,
-},
-{
-  path: 'contacto',
-  component: ContactoComponent,
-},
+  },
+  {
+    path: 'cielorrasos/:nombre',
+    component: CielorrasosComponent,
+  },
+  {
+    path: 'contacto',
+    component: ContactoComponent,
+  },
 ];
 
 @NgModule({
@@ -43,18 +41,17 @@ const routes: Routes = [
     ContactoComponent,
     HomeComponent,
     CarouselBasicComponent,
-    DroprevestimientosComponent,
-    DropcielorrasosComponent,
-    FiltradoPipe
+
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(routes)
+    [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
+
   ],
   exports: [
-    RouterModule
-],
+    [RouterModule]
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

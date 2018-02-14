@@ -13,10 +13,22 @@
           </li>
           
           <li class="nav-item dropdown">
-            <app-droprevestimientos></app-droprevestimientos>
+            <div ngbDropdown>
+              <a class="nav-link dropdown-toggle" id="dropdownConfig" ngbDropdownToggle>Revestimientos</a>
+              <ul ngbDropdownMenu aria-labelledby="dropdownConfig">
+                <li class="dropdown-item" *ngFor="let modelore of modelosre" (click)="onTabChange('/revestimientos/'+modelore.nombre)">{{modelore.nombre}}</li>
+            
+              </ul>
+            </div>
           </li>
           <li class="nav-item dropdown">
-              <app-dropcielorrasos></app-dropcielorrasos>
+            <div ngbDropdown>
+              <a class="nav-link dropdown-toggle" id="dropdownConfig" ngbDropdownToggle>Cielorrasos</a>
+              <ul ngbDropdownMenu aria-labelledby="dropdownConfig">
+                <li class="dropdown-item" *ngFor="let modeloci of modelosci" (click)="onTabChange('/cielorrasos/'+modeloci.nombre)">{{modeloci.nombre}}</li>
+            
+              </ul>
+            </div>
             </li>
             <li class="nav-item">
             <a class="nav-link" routerLink="/contacto">Contacto</a>

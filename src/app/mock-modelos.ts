@@ -1,7 +1,8 @@
 
-import { Modelo } from './modelo';
+import { Modelore } from './modelo';
+import { Modeloci } from './modelo';
 
-export const REVESTIMIENTOS: Modelo[] = [
+export const REVESTIMIENTOS: Modelore[] = [
   { id: 1, categoria: 1, nombre: 'Arenisca' },
   { id: 2, categoria: 1, nombre: 'Marmol' },
   { id: 3, categoria: 1, nombre: 'Patagonia' },
@@ -16,7 +17,7 @@ export const REVESTIMIENTOS: Modelo[] = [
   { id: 12, categoria: 1, nombre: 'Lisa' }
 ];
 
-export const CIELORRASOS: Modelo[] = [
+export const CIELORRASOS: Modeloci[] = [
   { id: 13, categoria: 2, nombre: 'Meteor' },
   { id: 14, categoria: 2, nombre: 'Alicante' },
   { id: 15, categoria: 2, nombre: 'Piel Naranja' },
