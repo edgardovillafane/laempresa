@@ -1,5 +1,5 @@
 #contcontacto {
-    min-height: calc(100% - 40px);
+    min-height: calc(100% - 65px);
     position: absolute;
     min-width: 100%!important;
     background: linear-gradient(135deg, rgba(89, 0, 81, 0.8) 0%, rgba(2, 4, 123, 0.89) 100%);
@@ -9,7 +9,6 @@
     background-image: url(/assets/images/constructor2.webp);
     background-repeat: no-repeat;
     background-size: contain;
-    height: calc(100% - 65px);
     min-height: calc(100% - 65px);
     min-width: 100%!important;
     position: absolute;
@@ -19,18 +18,25 @@
     .nascosto {
         display: none;
     }
+    .mtmobi {
+        margin-top: 3rem!important;
+    }
     footer {
         display: none!important;
     }
+    #contcontacto {
+        height: calc(100% - 0px);
+    }
     #fondocontacto {
         background-image: none;
-        min-height: calc(100% - 0px);
-        height: calc(100% - 0px);
+        height: calc(100% - 56px);
+        min-height: calc(100% - 65px);
     }
 }
 
 @media screen and (min-width:993px) {
     #contcontacto {
         height: calc(100% - 65px);
+        min-height: calc(100% - 0px);
     }
 }

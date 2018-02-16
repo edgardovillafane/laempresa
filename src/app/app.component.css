@@ -5,6 +5,11 @@
     transition: 300ms all ease-in-out;
 }
 
+.navbar-brand {
+    margin-top: -25px!important;
+    padding-top: 0!important;
+}
+
 .droplista {
     margin-left: 0!important;
 }
