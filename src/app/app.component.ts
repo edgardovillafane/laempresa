@@ -3,10 +3,6 @@ import { Component, DoCheck } from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { ActivatedRoute, Router } from '@angular/router';
 
-
-
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AppComponent {
 
   constructor(private router: Router) {}
-  title = 'app';
+  title = 'Seca Construcciones';
   modelosre = REVESTIMIENTOS;
   modelosci = CIELORRASOS;
   onTabChange(ruta) {

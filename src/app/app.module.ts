@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -49,10 +49,11 @@ const routes: Routes = [
     ColocacionplacasComponent,
 
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
+    [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
 
   ],
   exports: [
