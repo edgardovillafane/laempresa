@@ -1,18 +1,15 @@
-import { REVESTIMIENTOS, CIELORRASOS } from './mock-modelos';
-import { Component, DoCheck } from '@angular/core';
-import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
+import { REVESTIMIENTOS, CIELORRASOS } from '../mock-modelos';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-navigation',
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.css']
 })
-export class AppComponent {
+export class NavigationComponent implements OnInit {
 
-  constructor(private router: Router) {}
-  title = 'Seca Construcciones';
+  constructor(private router: Router) { }
   modelosre = REVESTIMIENTOS;
   modelosci = CIELORRASOS;
   onTabChange(ruta) {
@@ -28,8 +25,7 @@ export class AppComponent {
     }
   }
 
+  ngOnInit() {
+  }
+
 }
-
-
-
-
