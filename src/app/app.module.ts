@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CarouselBasicComponent } from './carousel-basic/carousel-basic.component';
 import { ColocacionplacasComponent } from './colocacionplacas/colocacionplacas.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -46,12 +47,13 @@ const routes: Routes = [
     HomeComponent,
     CarouselBasicComponent,
     ColocacionplacasComponent,
-    NavigationComponent,
+    NavigationComponent
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     NgbModule.forRoot(),
     [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
 
