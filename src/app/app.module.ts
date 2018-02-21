@@ -53,7 +53,6 @@ const routes: Routes = [
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
     NgbModule.forRoot(),
     [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
 
