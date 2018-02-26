@@ -11,6 +11,8 @@ import { CarouselBasicComponent } from './carousel-basic/carousel-basic.componen
 import { ColocacionplacasComponent } from './colocacionplacas/colocacionplacas.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Http, Response, RequestOptions, Headers } from '@angular/http';
+import { GraciasComponent } from './gracias/gracias.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,10 @@ const routes: Routes = [
     path: 'contacto',
     component: ContactoComponent,
   },
+  {
+    path: 'gracias',
+    component: GraciasComponent,
+  },
 ];
 
 @NgModule({
@@ -47,7 +53,8 @@ const routes: Routes = [
     HomeComponent,
     CarouselBasicComponent,
     ColocacionplacasComponent,
-    NavigationComponent
+    NavigationComponent,
+    GraciasComponent
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -60,7 +67,7 @@ const routes: Routes = [
   exports: [
     [RouterModule]
   ],
-  providers: [],
+  providers: [Http],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

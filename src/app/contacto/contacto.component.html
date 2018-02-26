@@ -1,4 +1,5 @@
 <app-navigation></app-navigation>
+
 <div id="fondocontacto">
     <div class="container" id="contcontacto">
         <div class="row justify-content-md-center d-flex align-items-center flex-wrap  h-100 text-white">
@@ -12,30 +13,30 @@
 
             <div class="col-12 col-lg-4 col-sm-12 mb-5 mt-1 mtmobi">
                 <h3>Envianos tu consulta</h3>
-                <form action="/phpmailer/contacto.php" method="POST" enctype="multipart/form-data">
+                <form action="/phpmailer/contacto.php" method="POST">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
-                        <input type="name" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                        <input type="name" class="form-control" id="nombre" name="nombre" #nombre placeholder="Ingresa tu nombre">
 
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu e-mail">
+                        <input type="email" class="form-control" id="email" name="email" #email placeholder="Ingresa tu e-mail">
 
                     </div>
                     <div class="form-group">
                         <label for="telefono">Teléfono</label>
-                        <input type="telephone" class="form-control" id="telefono" name="telefono" placeholder="Ingresa tu teléfono">
+                        <input type="telephone" class="form-control" id="telefono" name="telefono" #telefono placeholder="Ingresa tu teléfono">
 
                     </div>
 
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" #mensaje rows="3"></textarea>
                     </div>
 
 
-                    <button type="submit" class="btn btn-lg btn-danger">Enviar</button>
+                    <button type="submit" class="btn btn-lg btn-danger" (click)="enviar()">Enviar</button>
 
                 </form>
             </div>

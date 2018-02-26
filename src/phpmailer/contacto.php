@@ -7,21 +7,26 @@ require("class.phpmailer.php");
 require("class.smtp.php");
 
 // Valores enviados desde el formulario
-if ( !isset($_POST["nombre"]) || !isset($_POST["email"]) || !isset($_POST["mensaje"]) ) {
+/*if ( !isset($_POST["nombre"]) || !isset($_POST["email"]) || !isset($_POST["mensaje"]) ) {
     die ("Es necesario completar todos los datos del formulario");
 }
 $nombre = $_POST["nombre"];
 $email = $_POST["email"];
 $telefono = $_POST["telefono"];
-$mensaje = $_POST["mensaje"];
+$mensaje = $_POST["mensaje"];*/
+
+$nombre = "Edgardo";
+$email = "edgardovillafane@gmail.com";
+$telefono = "46442659";
+$mensaje = "test".date('H:i');
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-$smtpHost = "usuario.ferozo.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "info@seca.com.ar";  // Mi cuenta de correo
+$smtpHost = "c1090159.ferozo.com";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "admin@seca.com.ar";  // Mi cuenta de correo
 $smtpClave = "Crujia2018";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
-$emailDestino = "edgardovillafane@suDominio.com";
+$emailDestino = "edgardovillafane@gmail.com";
 
 $mail = new PHPMailer();
 $mail->IsSMTP();
