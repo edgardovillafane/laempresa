@@ -37,6 +37,7 @@ nav div {
 .tx42 {
     font-size: 42px;
     color: white;
+    text-transform: uppercase;
 }
 
 .splash {

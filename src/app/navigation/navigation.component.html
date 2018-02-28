@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text">
         <a class="navbar-brand" href="#"><img id="logogrande" alt="logo" src="assets/images/logo.jpg"></a>
         <div ngbDropdown>
-            <button class="navbar-toggler" type="button" ngbDropdownToggle>
+            <button class="navbar-toggler" type="button" aria-label="hamburguer" ngbDropdownToggle>
   <span class="navbar-toggler-icon"></span>
 </button>
             <div ngbDropdownMenu aria-labelledby="dropdownConfig" class="menumobile">
@@ -31,8 +31,8 @@
 
                 <li class="nav-item dropdown">
                     <div ngbDropdown>
-                        <a class="nav-link dropdown-toggle" id="dropdownConfig" ngbDropdownToggle>Revestimientos</a>
-                        <ul ngbDropdownMenu aria-labelledby="dropdownConfig">
+                        <a class="nav-link dropdown-toggle" id="dropdownConfig1" ngbDropdownToggle>Revestimientos</a>
+                        <ul ngbDropdownMenu aria-labelledby="dropdownConfig1">
                             <li class="dropdown-item droplista" *ngFor="let modelore of modelosre" (click)="onTabChange('/revestimientos/'+modelore.nombre)">{{modelore.nombre}}</li>
 
                         </ul>

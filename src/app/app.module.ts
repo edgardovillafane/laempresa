@@ -13,6 +13,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import { GraciasComponent } from './gracias/gracias.component';
+import { ConsultaporobraComponent } from './consultaporobra/consultaporobra.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
     path: 'gracias',
     component: GraciasComponent,
   },
+  {
+    path: 'consulta',
+    component: ConsultaporobraComponent,
+  },
 ];
 
 @NgModule({
@@ -54,7 +59,8 @@ const routes: Routes = [
     CarouselBasicComponent,
     ColocacionplacasComponent,
     NavigationComponent,
-    GraciasComponent
+    GraciasComponent,
+    ConsultaporobraComponent
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

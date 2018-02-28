@@ -11,7 +11,7 @@ export class ColocacionplacasComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
-    this._slug = this.route.snapshot.params['slug'];
+    this._slug = this.route.snapshot.params['slug'].replace(/-/g, ' ');
   }
 
 }
